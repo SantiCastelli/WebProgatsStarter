@@ -10,6 +10,9 @@ body {
     background-color: rgba(190, 183, 171, 0.3);
     padding: 2ch;
 }
+.header--logo{
+    display: none;
+}
 
 .header--title {
     text-transform: uppercase;
@@ -37,10 +40,10 @@ body {
 
 }
 
-.section-principal {
+.principal {
     background-image: url(gato\ bostezo.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 10px;
     background-size: cover;
     height: 60vh;
     display: flex;
@@ -49,8 +52,83 @@ body {
     margin-top: 15px;
 }
 
-.section-principal--titulo {
+.principal--titulo {
     color: white;
     display: inline-block;
+    
+}
+
+.equipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.equipo--card{
+    background-image: url(fondo\ patas.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 gray;
+
+}
+
+.equipo--nombre, 
+.equipo--rol {
+    margin: 0;
+}
+
+.equipo--rol {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 15px;
+    padding: 2px 16px;
+    font-weight: 700;
+}
+
+.foot {
+    background-color: rgb(236, 235, 231);
+    padding: 2px;
+    width: 300px;
+    height: 20;
+    margin-top: 20px;
+}
+.foot--text1,
+.foot--text2{
+    margin: 0;
+    
+    
+}
+.foot--color {
+    color: burlywood;
+}
+
+@media (min-width:598px) {
+    .header--title {
+        display: none;
+    }
+    
+    .header--logo {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .header {
+        display: flex;
+    }
     
 }
