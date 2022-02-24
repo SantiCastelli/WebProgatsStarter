@@ -37,26 +37,37 @@ body {
     border-radius: 14px;
     width: 150px;
     text-align: center;
+    font-weight: 700;
+}
 
+.menu--item:hover {
+    color: #3f2f21;
+    background-color: #f2b366;
 }
 
 .principal {
-    background-image: url(gato\ bostezo.png);
-    background-repeat: no-repeat;
-    background-position: center 10px;
-    background-size: cover;
-    height: 60vh;
-    display: flex;
-    align-items: flex-end;
-    border-radius: 1rem;
-    margin-top: 15px;
+        height: 50vh;
+        background-image: url("gato\ bostezo.png");
+        background-size: cover;
+        color: white;
+        font-size: clamp(
+          1rem,
+          5vw,
+          3rem
+        ); /* idealmente quiero el tamaño del texto un 5% del viewpoer, pero no disminuyas más de 2rem y nunca aumentes más de 4rem*/
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        background-position: center 25%;
+        background-repeat: no-repeat;
 }
 
-.principal--titulo {
-    color: white;
-    display: inline-block;
+
     
-}
+
 
 .equipo {
     display: flex;
@@ -64,6 +75,10 @@ body {
     justify-content: center;
     align-items: center;
     
+}
+
+.equipo--titulo {
+    text-align: center;
 }
 
 .equipo--card{
@@ -95,21 +110,26 @@ body {
 }
 
 .foot {
-    background-color: rgb(236, 235, 231);
-    padding: 2px;
-    width: 300px;
-    height: 20;
-    margin-top: 20px;
+    background-color: rgba(190, 183, 171, 0.3);
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
-.foot--text1,
-.foot--text2{
-    margin: 0;
     
-    
-}
-.foot--color {
+
+.foot--link {
+    text-decoration: none;
     color: burlywood;
 }
+
+#swipeup img {
+    width: 50px;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
+/* Version Tablet */
+
 
 @media (min-width:598px) {
     .header--title {
@@ -131,4 +151,7 @@ body {
         display: flex;
     }
     
+    .principal {
+        background-image: url(img/sleepingCat.jpg);
+    }
 }
